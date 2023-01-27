@@ -1,9 +1,0 @@
-dalvik.vm.image-dex2oat-filter=extract
-dalvik.vm.lockprof.threshold=500
-net.bt.name=Android
-persist.debug.dalvik.vm.core_platform_api_policy=just-warn
-ro.arrow.device=j7y17lte
-ro.build.description=arrow_j7y17lte-eng 11 RQ3A.211001.001 eng.root.20221225.100954 test-keys
-ro.build.display.id=RQ3A.211001.001
-ro.build.product=j7y17lte
-ro.wifi.channels=
