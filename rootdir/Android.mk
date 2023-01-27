@@ -1,9 +1,19 @@
-#
-# Copyright (C) 2023 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
 LOCAL_PATH := $(call my-dir)
 
-# Recovery init configuration files
+include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.samsungexynos7870
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
+LOCAL_REQUIRED_MODULES := fstab.ramdisk
+include $(BUILD_PREBUILT) 
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.ramdisk
+LOCAL_MODULE_STEM  := fstab.samsungexynos7870
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/$(LOCAL_MODULE_STEM)
+LOCAL_MODULE_PATH := $(TARGET_RAMDISK_OUT)
+include $(BUILD_PREBUILT)
