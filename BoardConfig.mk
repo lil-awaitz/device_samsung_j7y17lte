@@ -17,9 +17,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.samsungexynos7870
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
 
-# VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Inherit the proprietary files
 include vendor/samsung/j7y17lte/BoardConfigVendor.mk
 
