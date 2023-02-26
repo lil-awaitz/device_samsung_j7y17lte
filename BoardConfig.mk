@@ -131,7 +131,7 @@ TARGET_POWERHAL_VARIANT := samsung
 # Libhwui
 HWUI_COMPILE_FOR_PERF := true
 
-#Offline charge
+# Offline charge
 BOARD_CHARGING_MODE_BOOTING_LPM := "/sys/class/power_supply/battery/batt_lp_charging"
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
@@ -177,3 +177,6 @@ TARGET_LD_SHIM_LIBS += \
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
+
+# No Vendor Included for now
+BUILD_WITHOUT_VENDOR := true
