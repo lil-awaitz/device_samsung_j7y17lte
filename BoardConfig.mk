@@ -1,10 +1,10 @@
 LOCAL_PATH := device/samsung/j7y17lte
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH)/init/libinit_j7y17lte.cpp
+TARGET_INIT_VENDOR_LIB := //$(LOCAL_PATH)/init/libinit_j7y17lte.cpp
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.samsungexynos7870
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.samsungexynos7870
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
