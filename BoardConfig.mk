@@ -178,5 +178,8 @@ TARGET_LD_SHIM_LIBS += \
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
 
+# VINTF
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/android.hardware.keymaster@3.0-service.xml
+
 # No Vendor Included for now
 BUILD_WITHOUT_VENDOR := true
